@@ -4,7 +4,7 @@ class CarrosModel {
   final int? id;
   final String? nome;
   final String? tipo;
-  final String? descrica;
+  final String? descricao;
   final String? urlFoto;
   final String? urlVideo;
   final String? latitude;
@@ -13,7 +13,7 @@ class CarrosModel {
     this.id,
     this.nome,
     this.tipo,
-    this.descrica,
+    this.descricao,
     this.urlFoto,
     this.urlVideo,
     this.latitude,
@@ -24,7 +24,7 @@ class CarrosModel {
     int? id,
     String? nome,
     String? tipo,
-    String? descrica,
+    String? descricao,
     String? urlFoto,
     String? urlVideo,
     String? latitude,
@@ -34,7 +34,7 @@ class CarrosModel {
       id: id ?? this.id,
       nome: nome ?? this.nome,
       tipo: tipo ?? this.tipo,
-      descrica: descrica ?? this.descrica,
+      descricao: descricao ?? this.descricao,
       urlFoto: urlFoto ?? this.urlFoto,
       urlVideo: urlVideo ?? this.urlVideo,
       latitude: latitude ?? this.latitude,
@@ -47,7 +47,7 @@ class CarrosModel {
       'id': id,
       'nome': nome,
       'tipo': tipo,
-      'descrica': descrica,
+      'descricao': descricao,
       'urlFoto': urlFoto,
       'urlVideo': urlVideo,
       'latitude': latitude,
@@ -60,7 +60,7 @@ class CarrosModel {
       id: map['id'],
       nome: map['nome'],
       tipo: map['tipo'],
-      descrica: map['descrica'],
+      descricao: map['descricao'],
       urlFoto: map['urlFoto'],
       urlVideo: map['urlVideo'],
       latitude: map['latitude'],
@@ -75,7 +75,7 @@ class CarrosModel {
 
   @override
   String toString() {
-    return 'CarrosModel(id: $id, nome: $nome, tipo: $tipo, descrica: $descrica, urlFoto: $urlFoto, urlVideo: $urlVideo, latitude: $latitude, longitude: $longitude)';
+    return 'CarrosModel(id: $id, nome: $nome, tipo: $tipo, descricao: $descricao, urlFoto: $urlFoto, urlVideo: $urlVideo, latitude: $latitude, longitude: $longitude)';
   }
 
   @override
@@ -86,7 +86,7 @@ class CarrosModel {
         other.id == id &&
         other.nome == nome &&
         other.tipo == tipo &&
-        other.descrica == descrica &&
+        other.descricao == descricao &&
         other.urlFoto == urlFoto &&
         other.urlVideo == urlVideo &&
         other.latitude == latitude &&
@@ -98,7 +98,7 @@ class CarrosModel {
     return id.hashCode ^
         nome.hashCode ^
         tipo.hashCode ^
-        descrica.hashCode ^
+        descricao.hashCode ^
         urlFoto.hashCode ^
         urlVideo.hashCode ^
         latitude.hashCode ^
